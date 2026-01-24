@@ -1,6 +1,6 @@
 {
   "name": "@darcyvilkner/2d-geometry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "2d geometry utility objects.",
   "type": "module",
   "main": "./index.mjs",
