@@ -1,13 +1,15 @@
 {
-  "name": "2d-geometry",
+  "name": "@darcyvilkner/2d-geometry",
   "version": "1.0.0",
   "description": "2d geometry utility objects.",
   "type": "module",
+  "main": "./index.mjs",
   "exports": {
-    ".": "./src/index.mjs"
+    ".": "./index.mjs"
   },
   "files": [
-    "src"
+    "./src/",
+    "./index.mjs"
   ],
   "repository": {
     "type": "git",
