@@ -1,4 +1,4 @@
-import V2 from "./v2.mjs"
+import {V2} from "./v2.mjs"
 
 export class Transform {
     /** @type {Float32Array} */
@@ -197,6 +197,16 @@ export class Transform {
         transform.b = V2.fromFloat32Array(transform.arr, 2)
         transform.p = V2.fromFloat32Array(transform.arr, 4)
         return transform
+    }
+    /**
+     * @param {V2} v2
+     */
+    static constant(v2 = V2.zero()){
+        return Transform.fromVals(
+            0, 0,
+            0, 0,
+            v2.arr[0], v2.arr[1],
+        )
     }
     /**
      */
